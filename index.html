@@ -31,19 +31,22 @@
   <div class="close-nav-menu">&times;</div>
   <div class="nav-menu-inner">
     <ul>
-      <li><a href="#" class="inner-shadow active">home</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">about</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">projects</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">achievements</a></li>
-      <li><a href="#" class="outer-shadow hover-in-shadow">contact</a></li>
+      <li><a href="#" class="link-item inner-shadow active">home</a></li>
+      <li><a href="#" class="link-item link outer-shadow hover-in-shadow">about</a></li>
+      <li><a href="#" class="link-item link outer-shadow hover-in-shadow">projects</a></li>
+      <li><a href="#" class="link-item link outer-shadow hover-in-shadow">achievements</a></li>
+      <li><a href="#" class="link-item link outer-shadow hover-in-shadow">contact</a></li>
 
     </ul>
   </div>
   <p class="copyright">&copy; 2022 OCTANE</p>
+  
 </nav>
-
+<div class="fade-out-effect">
+    
+</div>
 <!---home-->
-<section class="home-section section">
+<section class="home-section section" id="home">
   <div class="effect-wrap">
     <div class="effect effect-1">
     </div>
@@ -67,7 +70,7 @@
         <p>Hello </p>
         <h2>I'm AAK</h2>
         <h1>Full Stack Web Dev</h1>
-        <a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+        <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
       </div>
       <div class="home-img" >
         <div class="img-box inner-shadow">
@@ -79,7 +82,7 @@
 </section> 
 
 <!--about-->
-<section class="about-section section">
+<section class="about-section section active" id="about">
   <div class="container">
     <div class="row">
       <div class="section-title">
@@ -93,11 +96,11 @@
         </div>
         <!--social links-->
         <div class="social-links">
-          <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="outer-shadow hover-in-shadow" ><i class="fab fa-twitter"></i></a>
-          <a href="#" class="outer-shadow hover-in-shadow" ><i class="fab fa-instagram"></i></a>
-          <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
-
+          <a href="#home" class="outer-shadow hover-in-shadow"><i class="fab fa-facebook-f"></i></a>
+          <a href="#about" class="outer-shadow hover-in-shadow" ><i class="fab fa-twitter"></i></a>
+          <a href="#services" class="outer-shadow hover-in-shadow" ><i class="fab fa-instagram"></i></a>
+          <a href="#portfolio" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#contact" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
         </div>
 
       </div>
@@ -114,7 +117,7 @@
            laudantium harum sed ullam recusandae laborum.
         </span></p>
         <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
-        <a href="#" class="btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+        <a href="#" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
       </div>
     </div>
     <!--about tabs-->
@@ -255,7 +258,7 @@
 <!--edu-->
 
 
-<div class="row">
+<div class="row" >
   <div class="education tab-content">
     <div class="row">
       <div class="timeline">
@@ -319,14 +322,176 @@
     </div>
   </div>
 </div>
+</section>
+<!--service item end -->
+<section class="service-section section" id="services">
+ <div class="container">
+<div class="row">
+  <div class="section-title">
+    <h2 data-heading="Services">What i do</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="service-item">
+    <div class="service-item-inner outer-shadow">
+      <div class="icon inner-shadow">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+     <h3>Web Development</h3>
+     <p>Loddfsfdsfsfsadfdfasdfdsfasdfsafdsafafad</p>
+    </div>
+  </div>
+
+  <div class="service-item">
+    <div class="service-item-inner outer-shadow">
+      <div class="icon inner-shadow">
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+     <h3>Responsive design</h3>
+     <p>Loddfsfdsfsfsadfdfasdfdsfasdfsafdsafafad</p>
+    </div>
+  </div>
+
+
+
+</div>  
+</div>
+</div>
 
 
 
 
+</section>
+
+<section class="portfolio-section" id="portfolio">
+
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="Portfolio">Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="project-img">
+            <a href="#"> <img class="imge" src="https://img.freepik.com/free-vector/flat-design-portfolio-template-with-details_52683-78816.jpg?w=2000"></a>  
+          </div>
+         <h3>Personal Portfolio</h3>
+         <p>Loddfsfdsfsfsadfdfasdfdsfasdfsafdsafafad</p>
+        </div>
+      </div>
+    
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="project-img">
+            <a href="#"> <img class="imge" src="https://img.freepik.com/free-vector/flat-design-portfolio-template-with-details_52683-78816.jpg?w=2000"></a>  
+          </div>
+         <h3>Tours & Travel</h3>
+         <p>Loddfsfdsfsfsadfdfasdfdsfasdfsafdsafafad</p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="project-img">
+           <a href="#"> <img class="imge" src="https://img.freepik.com/free-vector/flat-design-portfolio-template-with-details_52683-78816.jpg?w=2000"></a>  
+          </div>
+         <h3>College Website</h3>
+         <p>Loddfsfdsfsfsadfdfasdfdsfasdfsafdsafafad</p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+          <div class="project-img">
+           <a href="#"> <img class="imge" src="https://img.freepik.com/free-vector/flat-design-portfolio-template-with-details_52683-78816.jpg?w=2000"></a>  
+          </div>
+         <h3>Exam Flix</h3>
+         <p>Loddfsfdsfsfsadfdfasdfdsfasdfsafdsafafad</p>
+        </div>
+      </div>
 
 
 
+    
+    
+    
+    </div>  
+    </div>
+    </div>
+    
+ 
+</section>
 
+<section class="contact-section section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="CONTACT">GET IN TOUCH</h2>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-phone"></i>
+          <span>Phone </span>
+          <p>000 123 7777</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+          <p>abc#gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-map-marked-alt"></i>
+          <span>Address</span>
+          <p>state street house no</p>
+        </div>
+      </div>
+
+     
+    </div>
+    <div class="row">
+      <div class="contact-form">
+        <form>
+          <div class="row">
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="text" placeholder="Name"  class="input-control">
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="text" placeholder="Email"  class="input-control">
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="text" placeholder="Name"  class="input-control">
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input type="text" placeholder="Name"  class="input-control">
+              </div>
+            </div>
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <textarea class="input-control" placeholder="Message"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="submit-btn">
+              <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
 
 
