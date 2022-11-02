@@ -1,8 +1,20 @@
 @media(max-width: 767px){
+    .home-section .home-img{
+        flex:0 0 90%;
+        max-width: 80%;
+        padding:0 30px;
+        margin-left: 25px;
+        
+        }
+        
+    .contact-section .w-50,
+    .contact-section .contact-item,
+    .service-section .skills .skill-item,
+    .about-section .about-info,
     .about-section .skills .skill-item,
-    .about-section .about-img
+    
     .home-section .home-text,
-    .home-secton .home-img{
+    .about-section .about-img{
         flex:0 0 100%;
         max-width: 100%;
     }
