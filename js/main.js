@@ -21,7 +21,10 @@ tabsContainer.addEventListener("click", (event) =>{
 })
 
 })();
+function bodyScrollingToggle(){
+  document.body.classList.toggle("stop-scrolling");
 
+}
 (()=>{
     const sections = document.querySelectorAll(".section");
     sections.forEach((section) =>{
@@ -40,8 +43,41 @@ tabsContainer.addEventListener("click", (event) =>{
   closeNavBtn.addEventListener("click",hideNavMenu);
   function showNavMenu(){
     navMenu.classList.toggle("open");
+    fadeOutEffect();
+    bodyScrollingToggle();
   }
   function hideNavMenu(){
     navMenu.classList.remove("open");
+    fadeOutEffect();
+    fadeOutEffect();
+    bodyScrollingToggle();
   }
+  function fadeOutEffect(){
+    document.querySelector(".fade-out-effect").classList.add("active");
+    setTimeout(() =>{
+        document.querySelector(".fade-out-effect").classList.remove("active");
+        },300)
+      }
+      document.addEventListener("click",(event) =>{
+        if(event.target.classList.contains('link-item')){
+          if(event.target.hash !== ""){
+            
+            const hash=event.target.hash;
+            document.querySelector(".section.active").classList.add("hide");
+            document.querySelector(".section.active").classList.remove("active");
+
+            document.querySelector(hash).classList.add("active");
+            document.querySelector(hash).classList.add("hide");
+
+            navMenu.querySelector(".active").classList.add("outer-shadow","hover-in-shadow");
+            navMenu.querySelector(".active").classList.remove("active","inner-shadow");
+
+            event.target.classList.add("active","inner-shadow");
+            event.target.classList.remove("outer-shadow","hover-in-shadow");
+
+            hideNavMenu();
+          }
+        }
+      })
+      
 })();
