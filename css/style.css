@@ -240,7 +240,7 @@ animation:spin 15s linear infinite;
     font-weight: 600;
     width:40px;
     color:var(--skin-color);
-    border-radius:20%;
+    border-radius:10%;
     border:2px solid var(--skin-color);
     text-transform: uppercase;
 }
@@ -768,10 +768,9 @@ position: relative;
      margin:0 0 10px;
      text-transform: captialize;
 }
-.service-section .service-item-inner p{ 
-    
+.service-section .service-item-inner p{
     word-break: break-all;
-   
+    color: var(--text-black-600);
 }
 
 
@@ -806,6 +805,14 @@ position: relative;
 }
 .portfolio-section .service-item-inner p{
     word-break: break-word;
+    color: var(--text-black-600);
+}
+.portfolio-section .service-item-inner h3{ 
+    font-size: 20px;
+    font-weight:600;
+    color: var(--text-black-700);
+     margin:0 0 10px;
+     text-transform: captialize;
 }
 
 
